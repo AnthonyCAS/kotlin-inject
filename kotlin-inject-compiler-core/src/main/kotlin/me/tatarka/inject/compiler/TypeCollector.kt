@@ -110,7 +110,7 @@ class TypeCollector private constructor(private val provider: AstProvider) : Ast
                 }
             }
         }
-        
+
         for (method in providerMethods) {
             val returnType = method.returnTypeFor(astClass)
             val key = TypeKey(returnType)
